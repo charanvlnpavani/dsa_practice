@@ -7,8 +7,6 @@
 
 const arr = [2, 1, 4, 3, 55, 43, 61, 59];
 
-const result = searchValue(arr, 59);
-
 const searchValue = (arr, takeValue) => {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === takeValue) {
@@ -18,4 +16,19 @@ const searchValue = (arr, takeValue) => {
   return -1;
 };
 
+const result = searchValue(arr, 59);
+
 console.log("Result is ", result);
+
+/* IIFE 
+
+(function (arr, takeValue){
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] === takeValue){
+      return i;
+    }
+  }
+    return -1;
+}([2, 1, 4, 3, 55, 43, 61, 59], 55))
+
+*/
