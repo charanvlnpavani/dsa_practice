@@ -23,6 +23,31 @@ function exampleNestedLoop1(expValue) {
 
 exampleNestedLoop1(5);
 
+//Example 3
+console.log("\nExample 3\n");
+function exampleNestedLoop2(expValue) {
+  for (let i = 0; i < expValue; i++) {
+    for (let j = i; j > 0; j--) {
+      console.log("i= ", i, " j=", j);
+    }
+    console.log("----------------");
+  }
+}
+
+exampleNestedLoop2(3);
+
+//Example 4
+console.log("\nExample 4\n");
+function exampleNestedLoop3(expValue) {
+  for (let i = 0; i < expValue; i++) {
+    for (let j = i; j >= 0; j--) {
+      console.log("i= ", i, " j=", j);
+    }
+    console.log("----------------");
+  }
+}
+
+exampleNestedLoop3(3);
 /**
  * OutPut 
  * 
@@ -79,6 +104,28 @@ i=  4  j= 1
 i=  4  j= 2
 i=  4  j= 3
 i=  4  j= 4
+----------------
+
+
+Example 3
+
+----------------
+i=  1  j= 1
+----------------
+i=  2  j= 2
+i=  2  j= 1
+----------------
+
+Example 4
+
+i=  0  j= 0
+----------------
+i=  1  j= 1
+i=  1  j= 0
+----------------
+i=  2  j= 2
+i=  2  j= 1
+i=  2  j= 0
 ----------------
  * 
  * 
