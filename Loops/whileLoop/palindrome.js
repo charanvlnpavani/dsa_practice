@@ -8,7 +8,7 @@ const palindrome = (value) => {
     revValue = revValue * 10 + lastDigit;
   }
   return original === revValue
-    ? " is a panlindrome Value"
+    ? " is a palindrome Value"
     : " is not a Palindrome Value";
 };
 
