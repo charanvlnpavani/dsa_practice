@@ -1,4 +1,4 @@
-const value = -12321;
+const value = 12321;
 const palindrome = (value) => {
   const original = value;
   let revValue = 0;
